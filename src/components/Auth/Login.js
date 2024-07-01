@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import api from '../../api';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -6,7 +7,14 @@ const Login = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        // Implement login logic
+        try {
+            const res = await api.post('/auth/login', { email, password });
+            console.log(res.data);
+            // Handle successful login, e.g., save token, redirect to dashboard
+        } catch (err) {
+            console.error(err.message);
+            // Handle error
+        }
     };
 
     return (
