@@ -16,6 +16,7 @@ app.use('/api/announcements', require('./routes/announcement'));
 app.use('/api/messages', require('./routes/message'));
 app.use('/api/timetables', require('./routes/timetable'));
 app.use('/api/resources', require('./routes/resource'));
+app.use('/api/fees', require('./routes/fee'));
 // Add other routes here...
 
 const PORT = process.env.PORT || 5000;
