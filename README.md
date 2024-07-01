@@ -12,21 +12,4 @@ This is a school management system built with React and Tailwind CSS for the fro
 - Create timetables
 - View timetables
 
-## Installation
-
-1. Clone the repository
-2. Install dependencies
-3. Run the frontend and backend servers
-
-```sh
-# Clone the repository
-git clone https://github.com/Mclawrenceco/school-management-software.git
-
-# Navigate to frontend directory
-cd frontend
-
-# Install dependencies
-npm install
-
-# Start the frontend server
-npm start
+Huge work in progress. Contributions are welcome🙏🙏🙏
