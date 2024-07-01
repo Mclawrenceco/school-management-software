@@ -12,6 +12,8 @@ app.use(express.json());
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/attendance', require('./routes/attendance'));
 app.use('/api/grades', require('./routes/grade'));
+app.use('/api/announcements', require('./routes/announcement'));
+app.use('/api/messages', require('./routes/message'));
 // Add other routes here...
 
 const PORT = process.env.PORT || 5000;
