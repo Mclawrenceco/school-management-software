@@ -10,6 +10,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
+app.use('/api/attendance', require('./routes/attendance'));
 // Add other routes here...
 
 const PORT = process.env.PORT || 5000;
