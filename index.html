@@ -1,41 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Management System</title>
-  <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>School Management System</h1>
-    <div class="form-section">
-      <h2>Add Student</h2>
-      <form id="student-form">
-        <input type="text" id="student-name" placeholder="Student Name" required>
-        <input type="number" id="student-age" placeholder="Age" required>
-        <input type="text" id="student-grade" placeholder="Grade" required>
-        <button type="submit">Add Student</button>
-      </form>
+    <div class="container">
+        <h1>School Management System</h1>
+        <div class="form-container">
+            <h2>Add Student</h2>
+            <form id="student-form">
+                <input type="text" id="student-name" placeholder="Student Name" required>
+                <input type="number" id="student-age" placeholder="Student Age" required>
+                <input type="text" id="student-class" placeholder="Class" required>
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+        <div class="list-container">
+            <h2>Students List</h2>
+            <ul id="students-list"></ul>
+        </div>
     </div>
-    <div class="form-section">
-      <h2>Add Teacher</h2>
-      <form id="teacher-form">
-        <input type="text" id="teacher-name" placeholder="Teacher Name" required>
-        <input type="number" id="teacher-age" placeholder="Age" required>
-        <input type="text" id="teacher-subject" placeholder="Subject" required>
-        <button type="submit">Add Teacher</button>
-      </form>
-    </div>
-    <div class="list-section">
-      <h2>Student List</h2>
-      <ul id="student-list"></ul>
-    </div>
-    <div class="list-section">
-      <h2>Teacher List</h2>
-      <ul id="teacher-list"></ul>
-    </div>
-  </div>
-  <script src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
